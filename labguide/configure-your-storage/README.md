@@ -142,4 +142,4 @@ kubectl get volumesnapshotclass
 
 This should give you the two classes that we just created, one for EBS and one for FSxN.
 
-If you are ready, move to the next chapter, where will provision our application (and some storage, of course). [4. Provision app and storage](/labguide/provisining-demoapp)
+If you are ready, move to the next chapter, where will provision our application (and some storage, of course). [4. Provision app and storage](/labguide/provisoning-demoapp)

@@ -134,4 +134,4 @@ demoapp-ebs-0   1/1     Pending   0          17m     10.11.51.24    ip-10-11-61-
 
 Yes it can. If the `demoapp-0` is not yet in a running state then wait a few seconds and repeat the command. It should come up quickly, while the EBS pod continues to stay in `Pending`. This showcases the cabilities of the FSxN storage service in AWS. It can be set up redundant across AZ, so that data is secure and available even when a complete AZ is lost. Furthermore, it is always accessible from all AZ of a region. It did not even have to "move" to zone 2b, is was already available there. Hence the pod can come up immediately and does not have to wait for the volume. This makes it the optimal choice for EKS workloads that need storage. Whereas the EBC storage service is limited to a single AZ, which might be too restrictive for your needs.
 
-But there are more reasons why you might want to choose FSxN as your storage option (not just for EKS). Find out in the next chapter, [5. Oh Snap](/labguide/snapshot/README.md)
+But there are more reasons why you might want to choose FSxN as your storage option (not just for EKS). Find out in the next chapter, [5. Oh Snap](snapshots)

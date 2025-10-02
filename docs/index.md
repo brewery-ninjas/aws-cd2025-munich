@@ -9,4 +9,4 @@ The Lab is organized in multiple chapters. They have to be followed in order.
 [3. Configure your storage](configure-your-storage)  
 [4. Provision app and storage](provisoning-demoapp)  
 [5. Multi-AZ FTW](multi-az)  
-[6. Attack of the Clones](snapshots)
+[6. Oh Snap!](snapshots)

@@ -1,4 +1,4 @@
-### 1. Get started with your Lab
+# 1. Get started with your Lab
 
 ## Access the lab environment
 

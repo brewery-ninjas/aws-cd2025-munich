@@ -1,4 +1,4 @@
-### 3. Configure your storage
+# 3. Configure your storage
 
 ## Trident Backend Config for iSCSI
 

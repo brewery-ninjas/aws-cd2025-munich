@@ -1,4 +1,4 @@
-### Multi-AZ FTW
+# Multi-AZ FTW
 
 Remember we deployed our app on nodes in a specific Availability Zone (AZ)? For a production setup you of course want your EKS cluster to be redundant across AZ and your workloads should not be impacted by any AZ outages. However, this has implications when it comes to storage. In this chapter we will find out more....
 

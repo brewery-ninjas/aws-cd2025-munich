@@ -1,4 +1,4 @@
-### 2. Explore your lab setup
+# 2. Explore your lab setup
 
 ## EKS Cluster
 

@@ -1,0 +1,31 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: clone
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: sc-fsxn-san
+  dataSource:
+    name: fsxn-snapshot
+    kind: VolumeSnapshot
+    apiGroup: snapshot.storage.k8s.io
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: clonepod
+spec:
+  volumes:
+    - name: clone
+      persistentVolumeClaim:
+       claimName: clone
+  containers:
+    - name: nginx
+      image: registry.k8s.io/nginx
+      volumeMounts:
+        - mountPath: "/var/www/html"
+          name: clone

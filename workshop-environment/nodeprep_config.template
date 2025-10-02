@@ -1,0 +1,15 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
+
+--==MYBOUNDARY==
+Content-Type: text/x-shellscript; charset="us-ascii"
+
+#!/bin/bash
+yum install -y nfs-utils
+yum install -y lsscsi iscsi-initiator-utils sg3_utils device-mapper-multipath
+sed -i 's/^(node.session.scan).*/1 = manual/' /etc/iscsi/iscsid.conf
+mpathconf --enable --with_multipathd y --find_multipaths n
+systemctl enable --now iscsid multipathd
+systemctl enable --now iscsi
+
+--==MYBOUNDARY==--

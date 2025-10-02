@@ -44,7 +44,7 @@ Click on the green + icon and choose "Open Preferences". Then choose "AWS Settin
 In order to save time, the basic setup of the EKS cluster and storage resources is automated. You just need to run the script by copying the command below into the terminal at the bottom of your Cloud9 window
 
 ```bash
-curl -sL https://raw.githubusercontent.com/fabian-born/aws-cd2025-munich/refs/heads/fabian/workshop-environment/0_prep/prep_environment.sh | bash
+curl -sL https://raw.githubusercontent.com/brewery-ninjas/aws-cd2025-munich/refs/heads/main/workshop-environment/prep_environment.sh | bash
 ```
 
 The setup will take 15-20 minutes so join us on a brief journey of the theory behind the next steps in your lab.

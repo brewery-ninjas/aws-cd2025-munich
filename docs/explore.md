@@ -32,7 +32,7 @@ Amazon FSx for NetApp ONTAP provides high-performance file storage that can be w
 With a single click, you can access the widely used ONTAP data management features like snapshots and cloning.
 It provides highly elastic and nearly limitless low-cost storage capacity, and supports compression and deduplication to further reduce storage costs.
 
-![](/labguide/images/fsxn-overview.png)
+![](images/fsxn-overview.png)
 
 The FSxN storage service is integrated with EKS via a CSI driver called [Trident](https://docs.netapp.com/us-en/trident/). This driver is also available as an EKS Add-On. This is already deployed on the cluster in the Trident namespace:
 
@@ -44,4 +44,4 @@ As you can see, it consists of multiple pods. The Operator manages the Trident i
 
 While the Trident driver is deployed, it is not yet configured. Trident requires one or more TridentBackendConfig that provide the necessary details for the storage service it should connect to. As FSxN support file (NFS, SMB) and block (iSCSI, NVMe) protocols, you can have multiple TridentBackendConfig pointing to the same FSxN service, one for each protocol you would like to use.
 
-In the next chapter we will create two backend configurations, one for NFS and one for iSCSI. So let's move on to chapter [3. Configure Storage](/labguide/configure-your-storage)
+In the next chapter we will create two backend configurations, one for NFS and one for iSCSI. So let's move on to chapter [3. Configure Storage](configure-your-storage)

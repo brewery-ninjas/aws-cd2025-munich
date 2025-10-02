@@ -183,4 +183,4 @@ Remember we noticed an Ingress and Service that was part of our app deployment? 
 aws elbv2 describe-load-balancers --query 'LoadBalancers[*].DNSName'
 ```
 
-Note that it can take several minutes until the ALB is actually available/reachable. So no worries if this still gives you an error (or 404 page). Just try again in a few minutes. In the meantime, you can continue to chapter [5. Multi-AZ FTW](/labguide/multi-az/README.md)
+Note that it can take several minutes until the ALB is actually available/reachable. So no worries if this still gives you an error (or 404 page). Just try again in a few minutes. In the meantime, you can continue to chapter [5. Multi-AZ FTW](multi-az)

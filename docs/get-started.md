@@ -49,4 +49,4 @@ curl -sL https://raw.githubusercontent.com/brewery-ninjas/aws-cd2025-munich/refs
 
 The setup will take 15-20 minutes so join us on a brief journey of the theory behind the next steps in your lab.
 
-Once the setup script is completed and we finished the overview, you can continue to chapter [2. Explore your lab setup](/labguide/explore)
+Once the setup script is completed and we finished the overview, you can continue to chapter [2. Explore your lab setup](explore)

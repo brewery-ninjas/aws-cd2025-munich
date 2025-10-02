@@ -4,19 +4,19 @@
 
 Access the website address provided by the event organizer. The URL includes an access-code parameter. If you only received the access-code from the event organizer, click [here](https://catalog.us-east-1.prod.workshops.aws/) to access the site. Click the Get Started button and proceed to the next step.
 
-![](/labguide/images/Event_Engine_GetStarted.png)
+![](images/Event_Engine_GetStarted.png)
 
 Click the Email One-Time Password (OTP) button.
 
-![](/labguide/images/Event_Engine_OTP.png)
+![](images/Event_Engine_OTP.png)
 
 Enter your available email address and click the Send passcode button.
 
-![](/labguide/images/Event_Engine_New_Email.png)
+![](images/Event_Engine_New_Email.png)
 
 Check your email inbox for an email with the subject Your one-time passcode and copy the passcode. Paste the copied passcode as shown below, then click the Sign in button.
 
-![](/labguide/images/Event_Engine_New_Passcode.png)
+![](images/Event_Engine_New_Passcode.png)
 
 If you accessed the Workshop Studio using the link in step 1 without an access-code, you will see a screen to enter the Event access code. Enter the access-code provided by the event organizer and click the Next button.
 
@@ -24,7 +24,7 @@ The screen will change to the Review and Join screen for the Workshop Studio eve
 
 You have now transitioned to the workshop screen. The menu in the upper left contains the workshop content, and you can access the AWS Console window by clicking the link in AWS account access at the bottom left. You can also check the Access Key and Secret Access Key for the CLI environment.
 
-![](/labguide/images/Event_Engine_Detail.png)
+![](images/Event_Engine_Detail.png)
 
 ## Cloud9
 
@@ -34,10 +34,10 @@ The Cloud9 setup requires a few more configurations for this lab.
 
 Go to Cloud9 by following [this link](https://console.aws.amazon.com/cloud9control). Then click on Open.
 
-![](/labguide/images/AWS_Cloud9.png)
+![](images/AWS_Cloud9.png)
 
 Click on the green + icon and choose "Open Preferences". Then choose "AWS Settings" in the left navigation bar and disable the "AWS managed temporary credentials" option:
-![](/labguide/images/cloud9-temp.png)
+![](images/cloud9-temp.png)
 
 ## Pre-Script to setup lab
 

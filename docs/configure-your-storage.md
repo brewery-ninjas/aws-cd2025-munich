@@ -4,7 +4,7 @@
 
 We have prepared configuration manifests for you already. These are generated to match your specific AWS environment with correct networking and credentials. In your Cloud9 Editor, please open the folder `fsxn` on the left navigation bar and then double click the file `02-backend_fsxn_san.yaml`.
 
-![](//docs/images/Cloud9-backend-san.png)
+![](/labguide/images/Cloud9-backend-san.png)
 
 This is a `TridentBackendConfig` for iSCSI. Let's review it:
 
@@ -63,7 +63,7 @@ Different workloads on your EKS cluster will have different storage needs. While
 
 Please open the file `01-backend_fsxn_nas.yaml` so we can review it:
 
-![](//docs/images/Cloud9-backend-nas.png)
+![](/labguide/images/Cloud9-backend-nas.png)
 
 - **Line 9** This time we want the file storage driver, called `ontap-nas` (NAS = Network Attached Storage).
 - **Line 10** We select `nfs`as our protocol. Note: Should you ever have a need to run Windows nodes in your Kubernetes cluster, Trident (and FSxN) would support SMB protocol as well.
@@ -91,7 +91,7 @@ Trident has been configured, but in order to make the new storage options availa
 
 Let's start with our iSCSI block storage. Please open the file `11-storage_class_san.yaml`
 
-![](//docs/images/Cloud9-backend-sc-san.png)
+![](/labguide/images/Cloud9-backend-sc-san.png)
 
 - **Line 4** We give this class a name. This will later be used to provision new volumes (via `PersistentVolumeClaims`) on this particular storage class.
 - **Line 5** This storage class will be handled by Trident. EKS will send any storage request against this class to Trident.

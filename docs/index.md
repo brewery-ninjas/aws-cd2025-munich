@@ -1,7 +1,5 @@
 👋 Welcome to AWS Community Days 2025 – Munich Hands-On Lab! 🇩🇪
 
-🔧 What to Expect:
-
 💡 Bring your curiosity, your laptop, and your passion for cloud technology. Today, it's all about rolling up your sleeves and trying out how to make applications persistent block storage multi-AZ capable.
 
 Welcome to the lab — let’s build something amazing! :smiley:

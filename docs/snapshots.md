@@ -7,7 +7,7 @@ Kubernetes (and therefore EKS) has native support for snapshots, a point-in-time
 
 ## Create EBS Snapshot
 
-Creating a snapshot in Kubernetes is easy. The `VolumeSnapshot`manifest is simple and straigt forward. Open the file `workshop-files/labguide/snapshots/ebs-snapshot.yaml in your Cloud9 editor. 
+Creating a snapshot in Kubernetes is easy. The `VolumeSnapshot`manifest is simple and straigt forward. Open the file `workshop-files/labguide/snapshots/ebs-snapshot.yaml` in your Cloud9 editor. 
 
 ```console
 apiVersion: snapshot.storage.k8s.io/v1

@@ -130,8 +130,7 @@ kubectl apply -f /home/ec2-user/environment/fsxn/12_storage_class_snapshot.yaml
 While the EBS CSI driver is already configured and has a storage class, it does not yet have a VolumeSnapshotClass. As we want to work with snapshots later on, we create this as well. Open the file `labguide/configure-storage/ebs-snapclass.yaml` in your Cloud9 editor and review it. Then apply it with
 
 ```console
-cd /home/ec2-user/environment/workshop-files/labguide/configure-your-storage
-kubectl apply -f ebs-snapclass.yaml
+kubectl apply -f /home/ec2-user/environment/workshop-files/labguide/configure-your-storage/ebs-snapclass.yaml
 ```
 
 We can review the Snapshot Classes, just to make sure we are ready for the next chapter:

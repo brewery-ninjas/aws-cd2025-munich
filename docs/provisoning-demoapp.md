@@ -2,7 +2,7 @@
 
 ## Deploy our App
 
-Enough with configuration, we finally want to have a real application that consumes some storage. We will be using a simple demo application, based on the popular nginx webserver. It is deployed as a `StatefulSet`in Kubernetes. This is the preferred option for any workloads that has storage needs, as it makes Kubernetes aware of the fact that this is stateful and needs special care. Please open the file `/labguide/provision/statefulset.yaml` in your Cloud9 editor and review it.
+Enough with configuration, we finally want to have a real application that consumes some storage. We will be using a simple demo application, based on the popular nginx webserver. It is deployed as a `StatefulSet`in Kubernetes. This is the preferred option for any workloads that has storage needs, as it makes Kubernetes aware of the fact that this is stateful and needs special care. Please open the file `/workshop-files/labguide/provisioning-demoapp/statefulset.yaml` in your Cloud9 editor and review it.
 
 We cover some relevant parts here. If you want to dive deeper into the topic of StatefulSets, the Kubernetes documentation has a [good overview](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/).
 
@@ -64,7 +64,7 @@ You will then find almost the same YAML manifest again, only that we now name ou
 Let's create the StatefulSet:
 
 ```console
-kubectl apply -f /home/ec2-user/environment/workshop-files/labguide/provision/statefulset.yml
+kubectl apply -f /home/ec2-user/environment/workshop-files/labguide/provisoning-demoapp/statefulset.yaml 
 ```
 
 ## Check storage provisioning

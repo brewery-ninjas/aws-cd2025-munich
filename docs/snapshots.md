@@ -25,8 +25,7 @@ The Snapshot references the SnapshotClass (which we created earlier when configu
 Let's go ahead and create the snapshot, then move quickly to the next step:
 
 ```console
-cd snapshot
-kubectl apply -f ebs-snapshot.yaml
+kubectl apply -f /home/ec2-user/environment/workshop-files/labguide/snapshots/ebs-snapshot.yaml
 ```
 
 We want to observe how fast our snapshot is created. Run the following command:
@@ -53,7 +52,7 @@ Now let's repeat that for the FSxN based volume. Open the file `fsxn-snapshot.ya
 Apply the manifest, then again move quicky to the next step.
 
 ```console
-kubectl apply -f fsxn-snapshot.yaml
+kubectl apply -f /home/ec2-user/environment/workshop-files/labguide/snapshots/fsxn-snapshot.yaml
 ```
 
 ```console
@@ -87,7 +86,7 @@ This cloned PVC is then mounted into our nginx pod.
 Let's create it:
 
 ```console
-kubectl apply -f clone.yaml
+kubectl apply -f /home/ec2-user/environment/workshop-files/labguide/snapshots/clone.yaml
 ```
 
 The check if we are done yet:
